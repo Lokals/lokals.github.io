@@ -6,6 +6,27 @@
     <title>Podsumowanie Faktur i Korekt - Miesięczne Rozliczenie</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/dataTables.bootstrap4.min.css">
+<style>
+    /* Kontener dla całej zawartości, aby wycentrować i skalować */
+    .container {
+        max-width: 100%;
+        overflow-x: auto;
+    }
+
+    /* Tabela, aby skalowała się do szerokości ekranu */
+    #fileTable {
+        width: 100%;
+        margin: 0 auto;
+        white-space: nowrap; /* Zapobiega łamaniu się komórek w tabeli */
+    }
+
+    /* Zapewnia responsywność dla komórek w tabeli */
+    th, td {
+        text-align: center;
+        padding: 8px;
+    }
+
+</style>
 </head>
 <body>
     <div class="container mt-5">
