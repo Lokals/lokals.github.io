@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Podsumowanie Faktur i Korekt - Miesięczne Rozliczenie</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/dataTables.bootstrap4.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Podsumowanie Faktur i Faktur Korygujących</h1>
+        <table id="fileTable" class="table table-striped table-bordered">
+            <thead>
+                <tr>
+                    <th>Nazwa FV</th>
+                    <th>Numer Faktury/Korekty</th>
+                    <th>Data Wystawienia</th>
+                    <th>Data Wystawienia Dok. Koryg</th>
+                    <th>Dokument Korygowany</th>
+                    <th>Kwota Netto</th>
+                    <th>Podatek</th>
+                    <th>Kwota Brutto</th>
+                    <th>Typ Faktury</th>
+                    <th>Miesiąc Rozliczeniowy</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>FVO_116_24_013176.pdf</td><td>FVO_116_24_013176.pdf</td><td>2024-08-27</td><td>---</td><td>---</td><td>1531.20</td><td>352.17</td><td>1883.37</td><td>Standardowa</td><td>Sierpień 2024</td></tr>
+<tr><td>FVO_116_24_012042.pdf</td><td>FVO_116_24_012042.pdf</td><td>2024-08-07</td><td>---</td><td>---</td><td>721.39</td><td>165.92</td><td>887.31</td><td>Standardowa</td><td>Sierpień 2024</td></tr>
+<tr><td>FVO_116_24_014590.pdf</td><td>FVO_116_24_014590.pdf</td><td>2024-09-18</td><td>---</td><td>---</td><td>39.94</td><td>9.18</td><td>49.12</td><td>Standardowa</td><td>Wrzesień 2024</td></tr>
+<tr><td>FVO_116_24_013599.pdf</td><td>FVO_116_24_013599.pdf</td><td>2024-09-03</td><td>---</td><td>---</td><td>4051.43</td><td>931.85</td><td>4983.28</td><td>Standardowa</td><td>Wrzesień 2024</td></tr>
+<tr><td>FVO_116_24_016146.pdf</td><td>FVO_116_24_016146.pdf</td><td>2024-10-11</td><td>---</td><td>---</td><td>30.47</td><td>7.01</td><td>37.48</td><td>Standardowa</td><td>Październik 2024</td></tr>
+<tr><td>FVO_116_24_012320.pdf</td><td>FVO_116_24_012320.pdf</td><td>2024-08-12</td><td>---</td><td>---</td><td>103.21</td><td>23.74</td><td>126.95</td><td>Standardowa</td><td>Sierpień 2024</td></tr>
+<tr><td>FVO_116_24_012484.pdf</td><td>FVO_116_24_012484.pdf</td><td>2024-08-14</td><td>---</td><td>---</td><td>85.54</td><td>19.68</td><td>105.22</td><td>Standardowa</td><td>Sierpień 2024</td></tr>
+<tr><td>FVO_116_24_013765.pdf</td><td>FVO_116_24_013765.pdf</td><td>2024-09-05</td><td>---</td><td>---</td><td>1000.98</td><td>230.20</td><td>1231.18</td><td>Standardowa</td><td>Wrzesień 2024</td></tr>
+<tr><td>FVO_116_24_014234.pdf</td><td>FVO_116_24_014234.pdf</td><td>2024-09-12</td><td>---</td><td>---</td><td>74.75</td><td>17.20</td><td>91.95</td><td>Standardowa</td><td>Wrzesień 2024</td></tr>
+<tr><td>FVO_116_24_016351.pdf</td><td>FVO_116_24_016351.pdf</td><td>2024-10-15</td><td>---</td><td>---</td><td>51.40</td><td>11.82</td><td>63.22</td><td>Standardowa</td><td>Październik 2024</td></tr>
+<tr><td>FVO_116_24_016972.pdf</td><td>FVO_116_24_016972.pdf</td><td>2024-10-24</td><td>---</td><td>---</td><td>3995.25</td><td>918.90</td><td>4914.15</td><td>Standardowa</td><td>Październik 2024</td></tr>
+<tr><td>FVO_116_24_014154.pdf</td><td>FVO_116_24_014154.pdf</td><td>2024-09-11</td><td>---</td><td>---</td><td>100.53</td><td>23.13</td><td>123.66</td><td>Standardowa</td><td>Wrzesień 2024</td></tr>
+<tr><td>FVO_116_24_012294.pdf</td><td>FVO_116_24_012294.pdf</td><td>2024-08-12</td><td>---</td><td>---</td><td>794.94</td><td>182.83</td><td>977.77</td><td>Standardowa</td><td>Sierpień 2024</td></tr>
+<tr><td>FVO_116_24_013405.pdf</td><td>FVO_116_24_013405.pdf</td><td>2024-08-30</td><td>---</td><td>---</td><td>1319.72</td><td>303.54</td><td>1623.26</td><td>Standardowa</td><td>Sierpień 2024</td></tr>
+<tr><td>FVO_116_24_012914.pdf</td><td>FVO_116_24_012914.pdf</td><td>2024-08-22</td><td>---</td><td>---</td><td>513.35</td><td>118.08</td><td>631.43</td><td>Standardowa</td><td>Sierpień 2024</td></tr>
+<tr><td>FVO_116_24_017065.pdf</td><td>FVO_116_24_017065.pdf</td><td>2024-10-25</td><td>---</td><td>---</td><td>1054.77</td><td>242.61</td><td>1297.38</td><td>Standardowa</td><td>Październik 2024</td></tr>
+<tr><td>FVO_116_24_015128.pdf</td><td>FVO_116_24_015128.pdf</td><td>2024-09-26</td><td>---</td><td>---</td><td>108.12</td><td>24.86</td><td>132.98</td><td>Standardowa</td><td>Wrzesień 2024</td></tr>
+<tr><td>FVO_116_24_016805.pdf</td><td>FVO_116_24_016805.pdf</td><td>2024-10-22</td><td>---</td><td>---</td><td>722.64</td><td>166.20</td><td>888.84</td><td>Standardowa</td><td>Październik 2024</td></tr>
+<tr><td>FVO_116_24_014747.pdf</td><td>FVO_116_24_014747.pdf</td><td>2024-09-20</td><td>---</td><td>---</td><td>569.22</td><td>130.94</td><td>700.16</td><td>Standardowa</td><td>Wrzesień 2024</td></tr>
+<tr><td>FVO_116_24_012322.pdf</td><td>FVO_116_24_012322.pdf</td><td>2024-08-12</td><td>---</td><td>---</td><td>32.90</td><td>7.57</td><td>40.47</td><td>Standardowa</td><td>Sierpień 2024</td></tr>
+<tr><td>FVO_116_24_012875.pdf</td><td>FVO_116_24_012875.pdf</td><td>2024-08-21</td><td>---</td><td>---</td><td>29.56</td><td>6.80</td><td>36.36</td><td>Standardowa</td><td>Sierpień 2024</td></tr>
+<tr><td>FVO_116_24_015713.pdf</td><td>FVO_116_24_015713.pdf</td><td>2024-10-04</td><td>---</td><td>---</td><td>172.47</td><td>39.67</td><td>212.14</td><td>Standardowa</td><td>Październik 2024</td></tr>
+<tr><td>FVO_116_24_016975.pdf</td><td>FVO_116_24_016975.pdf</td><td>2024-10-24</td><td>---</td><td>---</td><td>149.12</td><td>34.30</td><td>183.42</td><td>Standardowa</td><td>Październik 2024</td></tr>
+<tr><td>FVO_116_24_013428.pdf</td><td>FVO_116_24_013428.pdf</td><td>2024-08-30</td><td>---</td><td>---</td><td>78.91</td><td>18.15</td><td>97.06</td><td>Standardowa</td><td>Sierpień 2024</td></tr>
+<tr><td>FVO_116_24_016424.pdf</td><td>FVO_116_24_016424.pdf</td><td>2024-10-16</td><td>---</td><td>---</td><td>6134.31</td><td>1410.91</td><td>7545.22</td><td>Standardowa</td><td>Październik 2024</td></tr>
+<tr><td>FVO_116_24_014541.pdf</td><td>FVO_116_24_014541.pdf</td><td>2024-09-17</td><td>---</td><td>---</td><td>35.60</td><td>8.19</td><td>43.79</td><td>Standardowa</td><td>Wrzesień 2024</td></tr>
+<tr><td>FVO_116_24_012468.pdf</td><td>FVO_116_24_012468.pdf</td><td>2024-08-14</td><td>---</td><td>---</td><td>1078.68</td><td>248.10</td><td>1326.78</td><td>Standardowa</td><td>Sierpień 2024</td></tr>
+<tr><td>FVO_116_24_012496.pdf</td><td>FVO_116_24_012496.pdf</td><td>2024-08-14</td><td>---</td><td>---</td><td>87.24</td><td>20.07</td><td>107.31</td><td>Standardowa</td><td>Sierpień 2024</td></tr>
+<tr><td>FVO_116_24_015306.pdf</td><td>FVO_116_24_015306.pdf</td><td>2024-09-30</td><td>---</td><td>---</td><td>560.78</td><td>128.97</td><td>689.75</td><td>Standardowa</td><td>Wrzesień 2024</td></tr>
+<tr><td>FVO_116_24_012858.pdf</td><td>FVO_116_24_012858.pdf</td><td>2024-08-21</td><td>---</td><td>---</td><td>23.91</td><td>5.50</td><td>29.41</td><td>Standardowa</td><td>Sierpień 2024</td></tr>
+<tr><td>FVO_116_24_012045.pdf</td><td>FVO_116_24_012045.pdf</td><td>2024-08-07</td><td>---</td><td>---</td><td>475.27</td><td>109.31</td><td>584.58</td><td>Standardowa</td><td>Sierpień 2024</td></tr>
+<tr><td>FVO_116_24_014608.pdf</td><td>FVO_116_24_014608.pdf</td><td>2024-09-18</td><td>---</td><td>---</td><td>158.47</td><td>36.45</td><td>194.92</td><td>Standardowa</td><td>Wrzesień 2024</td></tr>
+<tr><td>FVO_116_24_014436.pdf</td><td>FVO_116_24_014436.pdf</td><td>2024-09-16</td><td>---</td><td>---</td><td>222.15</td><td>51.08</td><td>273.23</td><td>Standardowa</td><td>Wrzesień 2024</td></tr>
+<tr><td>FVO_116_24_017103.pdf</td><td>FVO_116_24_017103.pdf</td><td>2024-10-25</td><td>---</td><td>---</td><td>102.72</td><td>23.63</td><td>126.35</td><td>Standardowa</td><td>Październik 2024</td></tr>
+<tr><td>FVO_116_24_015112.pdf</td><td>FVO_116_24_015112.pdf</td><td>2024-09-26</td><td>---</td><td>---</td><td>802.06</td><td>184.47</td><td>986.53</td><td>Standardowa</td><td>Wrzesień 2024</td></tr>
+<tr><td>FVO_116_24_014769.pdf</td><td>FVO_116_24_014769.pdf</td><td>2024-09-20</td><td>---</td><td>---</td><td>214.52</td><td>49.34</td><td>263.86</td><td>Standardowa</td><td>Wrzesień 2024</td></tr>
+<tr><td>FVO_116_24_017274.pdf</td><td>FVO_116_24_017274.pdf</td><td>2024-10-29</td><td>---</td><td>---</td><td>1376.98</td><td>316.73</td><td>1693.71</td><td>Standardowa</td><td>Październik 2024</td></tr>
+<tr><td>FVO_116_24_016340.pdf</td><td>FVO_116_24_016340.pdf</td><td>2024-10-15</td><td>---</td><td>---</td><td>909.32</td><td>209.13</td><td>1118.45</td><td>Standardowa</td><td>Październik 2024</td></tr>
+<tr><td>FVO_116_24_016432.pdf</td><td>FVO_116_24_016432.pdf</td><td>2024-10-16</td><td>---</td><td>---</td><td>234.61</td><td>53.96</td><td>288.57</td><td>Standardowa</td><td>Październik 2024</td></tr>
+<tr><td>FVO_116_24_014621.pdf</td><td>FVO_116_24_014621.pdf</td><td>2024-09-18</td><td>---</td><td>---</td><td>39.04</td><td>8.98</td><td>48.02</td><td>Standardowa</td><td>Wrzesień 2024</td></tr>
+<tr><td>FVO_116_24_013115.pdf</td><td>FVO_116_24_013115.pdf</td><td>2024-08-26</td><td>---</td><td>---</td><td>258.52</td><td>59.46</td><td>317.98</td><td>Standardowa</td><td>Sierpień 2024</td></tr>
+<tr><td>FVO_116_24_015028.pdf</td><td>FVO_116_24_015028.pdf</td><td>2024-09-25</td><td>---</td><td>---</td><td>569.55</td><td>130.99</td><td>700.54</td><td>Standardowa</td><td>Wrzesień 2024</td></tr>
+<tr><td>FVO_116_24_012418.pdf</td><td>FVO_116_24_012418.pdf</td><td>2024-08-13</td><td>---</td><td>---</td><td>25.52</td><td>5.87</td><td>31.39</td><td>Standardowa</td><td>Sierpień 2024</td></tr>
+<tr><td>FVO_116_24_013262.pdf</td><td>FVO_116_24_013262.pdf</td><td>2024-08-28</td><td>---</td><td>---</td><td>58.02</td><td>13.34</td><td>71.36</td><td>Standardowa</td><td>Sierpień 2024</td></tr>
+<tr><td>FVO_116_24_012961.pdf</td><td>FVO_116_24_012961.pdf</td><td>2024-08-22</td><td>---</td><td>---</td><td>122.84</td><td>28.25</td><td>151.09</td><td>Standardowa</td><td>Sierpień 2024</td></tr>
+<tr><td>FVO_116_24_015773.pdf</td><td>FVO_116_24_015773.pdf</td><td>2024-10-07</td><td>---</td><td>---</td><td>267.45</td><td>61.50</td><td>328.95</td><td>Standardowa</td><td>Październik 2024</td></tr>
+<tr><td>FVO_116_24_016093.pdf</td><td>FVO_116_24_016093.pdf</td><td>2024-10-10</td><td>---</td><td>---</td><td>21.14</td><td>4.86</td><td>26.00</td><td>Standardowa</td><td>Październik 2024</td></tr>
+<tr><td>FVO_116_24_016734.pdf</td><td>FVO_116_24_016734.pdf</td><td>2024-10-21</td><td>---</td><td>---</td><td>292.68</td><td>67.32</td><td>360.00</td><td>Standardowa</td><td>Październik 2024</td></tr>
+<tr><td>FVO_116_24_013857.pdf</td><td>FVO_116_24_013857.pdf</td><td>2024-09-06</td><td>---</td><td>---</td><td>428.51</td><td>98.56</td><td>527.07</td><td>Standardowa</td><td>Wrzesień 2024</td></tr>
+<tr><td>FVO_116_24_016244.pdf</td><td>FVO_116_24_016244.pdf</td><td>2024-10-14</td><td>---</td><td>---</td><td>70.47</td><td>16.21</td><td>86.68</td><td>Standardowa</td><td>Październik 2024</td></tr>
+<tr><td>FVO_116_24_015956.pdf</td><td>FVO_116_24_015956.pdf</td><td>2024-10-09</td><td>---</td><td>---</td><td>767.40</td><td>176.51</td><td>943.91</td><td>Standardowa</td><td>Październik 2024</td></tr>
+<tr><td>FVO_116_24_013704.pdf</td><td>FVO_116_24_013704.pdf</td><td>2024-09-04</td><td>---</td><td>---</td><td>122.22</td><td>28.11</td><td>150.33</td><td>Standardowa</td><td>Wrzesień 2024</td></tr>
+<tr><td>FVO_116_24_016133.pdf</td><td>FVO_116_24_016133.pdf</td><td>2024-10-11</td><td>---</td><td>---</td><td>41.48</td><td>9.54</td><td>51.02</td><td>Standardowa</td><td>Październik 2024</td></tr>
+<tr><td>FVO_116_24_015412.pdf</td><td>FVO_116_24_015412.pdf</td><td>2024-10-01</td><td>---</td><td>---</td><td>506.25</td><td>116.45</td><td>622.70</td><td>Standardowa</td><td>Październik 2024</td></tr>
+<tr><td>FVO_116_24_013275.pdf</td><td>FVO_116_24_013275.pdf</td><td>2024-08-28</td><td>---</td><td>---</td><td>19.93</td><td>4.58</td><td>24.51</td><td>Standardowa</td><td>Sierpień 2024</td></tr>
+<tr><td>FVO_116_24_012989.pdf</td><td>FVO_116_24_012989.pdf</td><td>2024-08-23</td><td>---</td><td>---</td><td>1358.84</td><td>312.58</td><td>1671.42</td><td>Standardowa</td><td>Sierpień 2024</td></tr>
+<tr><td>FVO_116_24_016043.pdf</td><td>FVO_116_24_016043.pdf</td><td>2024-10-10</td><td>---</td><td>---</td><td>1622.14</td><td>373.08</td><td>1995.22</td><td>Standardowa</td><td>Październik 2024</td></tr>
+<tr><td>FVO_116_24_016527.pdf</td><td>FVO_116_24_016527.pdf</td><td>2024-10-17</td><td>---</td><td>---</td><td>238.94</td><td>54.97</td><td>293.91</td><td>Standardowa</td><td>Październik 2024</td></tr>
+<tr><td>FVO_116_24_012184.pdf</td><td>FVO_116_24_012184.pdf</td><td>2024-08-09</td><td>---</td><td>---</td><td>472.30</td><td>108.65</td><td>580.95</td><td>Standardowa</td><td>Sierpień 2024</td></tr>
+<tr><td>FVO_116_24_015199.pdf</td><td>FVO_116_24_015199.pdf</td><td>2024-09-27</td><td>---</td><td>---</td><td>1521.11</td><td>349.83</td><td>1870.94</td><td>Standardowa</td><td>Wrzesień 2024</td></tr>
+<tr><td>FVO_116_24_014047.pdf</td><td>FVO_116_24_014047.pdf</td><td>2024-09-10</td><td>---</td><td>---</td><td>704.77</td><td>162.11</td><td>866.88</td><td>Standardowa</td><td>Wrzesień 2024</td></tr>
+<tr><td>FVO_116_24_014292.pdf</td><td>FVO_116_24_014292.pdf</td><td>2024-09-13</td><td>---</td><td>---</td><td>5182.92</td><td>1192.08</td><td>6375.00</td><td>Standardowa</td><td>Wrzesień 2024</td></tr>
+<tr><td>FVO_116_24_012152.pdf</td><td>FVO_116_24_012152.pdf</td><td>2024-08-08</td><td>---</td><td>---</td><td>15.00</td><td>3.45</td><td>18.45</td><td>Standardowa</td><td>Sierpień 2024</td></tr>
+<tr><td>FVO_116_24_016917.pdf</td><td>FVO_116_24_016917.pdf</td><td>2024-10-23</td><td>---</td><td>---</td><td>80.70</td><td>18.56</td><td>99.26</td><td>Standardowa</td><td>Październik 2024</td></tr>
+<tr><td>FVO_116_24_016724.pdf</td><td>FVO_116_24_016724.pdf</td><td>2024-10-21</td><td>---</td><td>---</td><td>130.15</td><td>29.94</td><td>160.09</td><td>Standardowa</td><td>Październik 2024</td></tr>
+<tr><td>FVO_116_24_014680.pdf</td><td>FVO_116_24_014680.pdf</td><td>2024-09-19</td><td>---</td><td>---</td><td>363.04</td><td>83.49</td><td>446.53</td><td>Standardowa</td><td>Wrzesień 2024</td></tr>
+<tr><td>FVO_116_24_015039.pdf</td><td>FVO_116_24_015039.pdf</td><td>2024-09-25</td><td>---</td><td>---</td><td>202.91</td><td>46.66</td><td>249.57</td><td>Standardowa</td><td>Wrzesień 2024</td></tr>
+<tr><td>FVO_116_24_014253.pdf</td><td>FVO_116_24_014253.pdf</td><td>2024-09-12</td><td>---</td><td>---</td><td>37.06</td><td>8.52</td><td>45.58</td><td>Standardowa</td><td>Wrzesień 2024</td></tr>
+<tr><td>FVO_116_24_014939.pdf</td><td>FVO_116_24_014939.pdf</td><td>2024-09-24</td><td>---</td><td>---</td><td>352.43</td><td>81.06</td><td>433.49</td><td>Standardowa</td><td>Wrzesień 2024</td></tr>
+<tr><td>FVO_116_24_017001.pdf</td><td>FVO_116_24_017001.pdf</td><td>2024-10-24</td><td>---</td><td>---</td><td>117.64</td><td>27.05</td><td>144.69</td><td>Standardowa</td><td>Październik 2024</td></tr>
+<tr><td>FVO_116_24_014497.pdf</td><td>FVO_116_24_014497.pdf</td><td>2024-09-17</td><td>---</td><td>---</td><td>1769.81</td><td>407.05</td><td>2176.86</td><td>Standardowa</td><td>Wrzesień 2024</td></tr>
+<tr><td>FVO_116_24_017377.pdf</td><td>FVO_116_24_017377.pdf</td><td>2024-10-30</td><td>---</td><td>---</td><td>427.36</td><td>98.30</td><td>525.66</td><td>Standardowa</td><td>Październik 2024</td></tr>
+<tr><td>FVO_116_24_014129.pdf</td><td>FVO_116_24_014129.pdf</td><td>2024-09-11</td><td>---</td><td>---</td><td>1010.77</td><td>232.47</td><td>1243.24</td><td>Standardowa</td><td>Wrzesień 2024</td></tr>
+<tr><td>FVO_116_24_013134.pdf</td><td>FVO_116_24_013134.pdf</td><td>2024-08-26</td><td>---</td><td>---</td><td>434.15</td><td>99.85</td><td>534.00</td><td>Standardowa</td><td>Sierpień 2024</td></tr>
+<tr><td>FVO_116_24_011938.pdf</td><td>FVO_116_24_011938.pdf</td><td>2024-08-06</td><td>---</td><td>---</td><td>983.54</td><td>226.22</td><td>1209.76</td><td>Standardowa</td><td>Sierpień 2024</td></tr>
+<tr><td>FVO_116_24_015586.pdf</td><td>FVO_116_24_015586.pdf</td><td>2024-10-03</td><td>---</td><td>---</td><td>1646.34</td><td>378.68</td><td>2025.02</td><td>Standardowa</td><td>Październik 2024</td></tr>
+<tr><td>FVO_116_24_014459.pdf</td><td>FVO_116_24_014459.pdf</td><td>2024-09-16</td><td>---</td><td>---</td><td>42.40</td><td>9.75</td><td>52.15</td><td>Standardowa</td><td>Wrzesień 2024</td></tr>
+<tr><td>FVO_116_24_014317.pdf</td><td>FVO_116_24_014317.pdf</td><td>2024-09-13</td><td>---</td><td>---</td><td>111.73</td><td>25.70</td><td>137.43</td><td>Standardowa</td><td>Wrzesień 2024</td></tr>
+<tr><td>FVO_116_24_013478.pdf</td><td>FVO_116_24_013478.pdf</td><td>2024-08-31</td><td>---</td><td>---</td><td>1478.63</td><td>340.05</td><td>1818.68</td><td>Standardowa</td><td>Sierpień 2024</td></tr>
+<tr><td>FVO_116_24_015784.pdf</td><td>FVO_116_24_015784.pdf</td><td>2024-10-07</td><td>---</td><td>---</td><td>95.81</td><td>22.03</td><td>117.84</td><td>Standardowa</td><td>Październik 2024</td></tr>
+<tr><td>FVO_116_24_016886.pdf</td><td>FVO_116_24_016886.pdf</td><td>2024-10-23</td><td>---</td><td>---</td><td>24.42</td><td>5.62</td><td>30.04</td><td>Standardowa</td><td>Październik 2024</td></tr>
+<tr><td>FVO_116_24_012388.pdf</td><td>FVO_116_24_012388.pdf</td><td>2024-08-13</td><td>---</td><td>---</td><td>631.94</td><td>145.36</td><td>777.30</td><td>Standardowa</td><td>Sierpień 2024</td></tr>
+<tr><td>FVO_116_24_013525.pdf</td><td>FVO_116_24_013525.pdf</td><td>2024-09-02</td><td>---</td><td>---</td><td>50.92</td><td>11.72</td><td>62.64</td><td>Standardowa</td><td>Wrzesień 2024</td></tr>
+<tr><td>FVO_116_24_014699.pdf</td><td>FVO_116_24_014699.pdf</td><td>2024-09-19</td><td>---</td><td>---</td><td>31.87</td><td>7.33</td><td>39.20</td><td>Standardowa</td><td>Wrzesień 2024</td></tr>
+<tr><td>FVO_116_24_015222.pdf</td><td>FVO_116_24_015222.pdf</td><td>2024-09-27</td><td>---</td><td>---</td><td>76.38</td><td>17.56</td><td>93.94</td><td>Standardowa</td><td>Wrzesień 2024</td></tr>
+<tr><td>FVO_116_24_017347.pdf</td><td>FVO_116_24_017347.pdf</td><td>2024-10-30</td><td>---</td><td>---</td><td>2073.92</td><td>476.99</td><td>2550.91</td><td>Standardowa</td><td>Październik 2024</td></tr>
+<tr><td>FVO_116_24_014670.pdf</td><td>FVO_116_24_014670.pdf</td><td>2024-09-19</td><td>---</td><td>---</td><td>478.14</td><td>109.96</td><td>588.10</td><td>Standardowa</td><td>Wrzesień 2024</td></tr>
+<tr><td>FVO_116_24_013679.pdf</td><td>FVO_116_24_013679.pdf</td><td>2024-09-04</td><td>---</td><td>---</td><td>1335.90</td><td>307.28</td><td>1643.18</td><td>Standardowa</td><td>Wrzesień 2024</td></tr>
+<tr><td>FVO_116_24_016517.pdf</td><td>FVO_116_24_016517.pdf</td><td>2024-10-17</td><td>---</td><td>---</td><td>84.05</td><td>19.33</td><td>103.38</td><td>Standardowa</td><td>Październik 2024</td></tr>
+<tr><td>FVO_116_24_016265.pdf</td><td>FVO_116_24_016265.pdf</td><td>2024-10-14</td><td>---</td><td>---</td><td>24.30</td><td>5.59</td><td>29.89</td><td>Standardowa</td><td>Październik 2024</td></tr>
+<tr><td>FVO_116_24_015803.pdf</td><td>FVO_116_24_015803.pdf</td><td>2024-10-07</td><td>---</td><td>---</td><td>57.05</td><td>13.12</td><td>70.17</td><td>Standardowa</td><td>Październik 2024</td></tr>
+<tr><td>FVO_116_24_016885.pdf</td><td>FVO_116_24_016885.pdf</td><td>2024-10-23</td><td>---</td><td>---</td><td>941.18</td><td>216.46</td><td>1157.64</td><td>Standardowa</td><td>Październik 2024</td></tr>
+<tr><td>FVO_116_24_016502.pdf</td><td>FVO_116_24_016502.pdf</td><td>2024-10-17</td><td>---</td><td>---</td><td>806.32</td><td>185.45</td><td>991.77</td><td>Standardowa</td><td>Październik 2024</td></tr>
+<tr><td>FVO_116_24_015221.pdf</td><td>FVO_116_24_015221.pdf</td><td>2024-09-27</td><td>---</td><td>---</td><td>76.92</td><td>17.69</td><td>94.61</td><td>Standardowa</td><td>Wrzesień 2024</td></tr>
+<tr><td>FVO_116_24_013873.pdf</td><td>FVO_116_24_013873.pdf</td><td>2024-09-06</td><td>---</td><td>---</td><td>143.49</td><td>33.00</td><td>176.49</td><td>Standardowa</td><td>Wrzesień 2024</td></tr>
+<tr><td>FVO_116_24_014852.pdf</td><td>FVO_116_24_014852.pdf</td><td>2024-09-23</td><td>---</td><td>---</td><td>569.37</td><td>130.96</td><td>700.33</td><td>Standardowa</td><td>Wrzesień 2024</td></tr>
+<tr><td>FVO_116_24_014339.pdf</td><td>FVO_116_24_014339.pdf</td><td>2024-09-13</td><td>---</td><td>---</td><td>42.83</td><td>9.85</td><td>52.68</td><td>Standardowa</td><td>Wrzesień 2024</td></tr>
+<tr><td>FVO_116_24_017181.pdf</td><td>FVO_116_24_017181.pdf</td><td>2024-10-28</td><td>---</td><td>---</td><td>364.69</td><td>83.88</td><td>448.57</td><td>Standardowa</td><td>Październik 2024</td></tr>
+<tr><td>FVO_116_24_012402.pdf</td><td>FVO_116_24_012402.pdf</td><td>2024-08-13</td><td>---</td><td>---</td><td>15.49</td><td>3.56</td><td>19.05</td><td>Standardowa</td><td>Sierpień 2024</td></tr>
+<tr><td>FVO_116_24_017234.pdf</td><td>FVO_116_24_017234.pdf</td><td>2024-10-28</td><td>---</td><td>---</td><td>36.30</td><td>8.35</td><td>44.65</td><td>Standardowa</td><td>Październik 2024</td></tr>
+<tr><td>FVO_116_24_013085.pdf</td><td>FVO_116_24_013085.pdf</td><td>2024-08-26</td><td>---</td><td>---</td><td>1290.69</td><td>296.86</td><td>1587.55</td><td>Standardowa</td><td>Sierpień 2024</td></tr>
+<tr><td>FVO_116_24_013709.pdf</td><td>FVO_116_24_013709.pdf</td><td>2024-09-04</td><td>---</td><td>---</td><td>118.71</td><td>27.30</td><td>146.01</td><td>Standardowa</td><td>Wrzesień 2024</td></tr>
+<tr><td>FVO_116_24_013537.pdf</td><td>FVO_116_24_013537.pdf</td><td>2024-09-02</td><td>---</td><td>---</td><td>344.83</td><td>79.30</td><td>424.13</td><td>Standardowa</td><td>Wrzesień 2024</td></tr>
+<tr><td>FVO_116_24_016261.pdf</td><td>FVO_116_24_016261.pdf</td><td>2024-10-14</td><td>---</td><td>---</td><td>12.02</td><td>2.76</td><td>14.78</td><td>Standardowa</td><td>Październik 2024</td></tr>
+<tr><td>FVO_116_24_012563.pdf</td><td>FVO_116_24_012563.pdf</td><td>2024-08-16</td><td>---</td><td>---</td><td>21.23</td><td>4.88</td><td>26.11</td><td>Standardowa</td><td>Sierpień 2024</td></tr>
+<tr><td>FVO_116_24_016713.pdf</td><td>FVO_116_24_016713.pdf</td><td>2024-10-21</td><td>---</td><td>---</td><td>795.17</td><td>182.89</td><td>978.06</td><td>Standardowa</td><td>Październik 2024</td></tr>
+<tr><td>FVO_116_24_014662.pdf</td><td>FVO_116_24_014662.pdf</td><td>2024-09-19</td><td>---</td><td>---</td><td>537.03</td><td>123.51</td><td>660.54</td><td>Standardowa</td><td>Wrzesień 2024</td></tr>
+<tr><td>FVO_116_24_012011.pdf</td><td>FVO_116_24_012011.pdf</td><td>2024-08-07</td><td>---</td><td>---</td><td>923.52</td><td>212.40</td><td>1135.92</td><td>Standardowa</td><td>Sierpień 2024</td></tr>
+<tr><td>FVO_116_24_013535.pdf</td><td>FVO_116_24_013535.pdf</td><td>2024-09-02</td><td>---</td><td>---</td><td>78.30</td><td>18.01</td><td>96.31</td><td>Standardowa</td><td>Wrzesień 2024</td></tr>
+<tr><td>FVO_116_24_013253.pdf</td><td>FVO_116_24_013253.pdf</td><td>2024-08-28</td><td>---</td><td>---</td><td>800.54</td><td>184.13</td><td>984.67</td><td>Standardowa</td><td>Sierpień 2024</td></tr>
+<tr><td>FVO_116_24_016129.pdf</td><td>FVO_116_24_016129.pdf</td><td>2024-10-11</td><td>---</td><td>---</td><td>628.57</td><td>144.57</td><td>773.14</td><td>Standardowa</td><td>Październik 2024</td></tr>
+<tr><td>FVO_116_24_011848.pdf</td><td>FVO_116_24_011848.pdf</td><td>2024-08-05</td><td>---</td><td>---</td><td>948.81</td><td>218.23</td><td>1167.04</td><td>Standardowa</td><td>Sierpień 2024</td></tr>
+<tr><td>FVO_116_24_015435.pdf</td><td>FVO_116_24_015435.pdf</td><td>2024-10-01</td><td>---</td><td>---</td><td>305.32</td><td>70.22</td><td>375.54</td><td>Standardowa</td><td>Październik 2024</td></tr>
+<tr><td>FVO_116_24_014071.pdf</td><td>FVO_116_24_014071.pdf</td><td>2024-09-10</td><td>---</td><td>---</td><td>137.57</td><td>31.64</td><td>169.21</td><td>Standardowa</td><td>Wrzesień 2024</td></tr>
+<tr><td>FVO_116_24_012831.pdf</td><td>FVO_116_24_012831.pdf</td><td>2024-08-21</td><td>---</td><td>---</td><td>2557.91</td><td>588.34</td><td>3146.25</td><td>Standardowa</td><td>Sierpień 2024</td></tr>
+<tr><td>FVO_116_24_013332.pdf</td><td>FVO_116_24_013332.pdf</td><td>2024-08-29</td><td>---</td><td>---</td><td>1083.80</td><td>249.26</td><td>1333.06</td><td>Standardowa</td><td>Sierpień 2024</td></tr>
+<tr><td>FVO_116_24_016921.pdf</td><td>FVO_116_24_016921.pdf</td><td>2024-10-23</td><td>---</td><td>---</td><td>31.59</td><td>7.27</td><td>38.86</td><td>Standardowa</td><td>Październik 2024</td></tr>
+<tr><td>FVO_116_24_013871.pdf</td><td>FVO_116_24_013871.pdf</td><td>2024-09-06</td><td>---</td><td>---</td><td>210.46</td><td>41.99</td><td>252.45</td><td>Standardowa</td><td>Wrzesień 2024</td></tr>
+<tr><td>FVO_116_24_012560.pdf</td><td>FVO_116_24_012560.pdf</td><td>2024-08-16</td><td>---</td><td>---</td><td>1290.64</td><td>296.84</td><td>1587.48</td><td>Standardowa</td><td>Sierpień 2024</td></tr>
+<tr><td>FVO_116_24_013341.pdf</td><td>FVO_116_24_013341.pdf</td><td>2024-08-29</td><td>---</td><td>---</td><td>279.48</td><td>64.29</td><td>343.77</td><td>Standardowa</td><td>Sierpień 2024</td></tr>
+<tr><td>FVO_116_24_012063.pdf</td><td>FVO_116_24_012063.pdf</td><td>2024-08-07</td><td>---</td><td>---</td><td>160.68</td><td>36.96</td><td>197.64</td><td>Standardowa</td><td>Sierpień 2024</td></tr>
+<tr><td>FVO_116_24_013989.pdf</td><td>FVO_116_24_013989.pdf</td><td>2024-09-09</td><td>---</td><td>---</td><td>152.48</td><td>35.07</td><td>187.55</td><td>Standardowa</td><td>Wrzesień 2024</td></tr>
+<tr><td>FVO_116_24_015452.pdf</td><td>FVO_116_24_015452.pdf</td><td>2024-10-01</td><td>---</td><td>---</td><td>28.02</td><td>6.45</td><td>34.47</td><td>Standardowa</td><td>Październik 2024</td></tr>
+<tr><td>FVO_116_24_015490.pdf</td><td>FVO_116_24_015490.pdf</td><td>2024-10-02</td><td>---</td><td>---</td><td>812.28</td><td>186.83</td><td>999.11</td><td>Standardowa</td><td>Październik 2024</td></tr>
+<tr><td>FVO_116_24_013793.pdf</td><td>FVO_116_24_013793.pdf</td><td>2024-09-05</td><td>---</td><td>---</td><td>117.36</td><td>27.00</td><td>144.36</td><td>Standardowa</td><td>Wrzesień 2024</td></tr>
+<tr><td>FVO_116_24_014413.pdf</td><td>FVO_116_24_014413.pdf</td><td>2024-09-16</td><td>---</td><td>---</td><td>667.24</td><td>153.46</td><td>820.70</td><td>Standardowa</td><td>Wrzesień 2024</td></tr>
+<tr><td>FVO_116_24_013197.pdf</td><td>FVO_116_24_013197.pdf</td><td>2024-08-27</td><td>---</td><td>---</td><td>133.10</td><td>30.61</td><td>163.71</td><td>Standardowa</td><td>Sierpień 2024</td></tr>
+<tr><td>FVO_116_24_015069.pdf</td><td>FVO_116_24_015069.pdf</td><td>2024-09-25</td><td>---</td><td>---</td><td>31.29</td><td>7.20</td><td>38.49</td><td>Standardowa</td><td>Wrzesień 2024</td></tr>
+<tr><td>FVO_116_24_015874.pdf</td><td>FVO_116_24_015874.pdf</td><td>2024-10-08</td><td>---</td><td>---</td><td>654.47</td><td>150.52</td><td>804.99</td><td>Standardowa</td><td>Październik 2024</td></tr>
+<tr><td>FVO_116_24_017291.pdf</td><td>FVO_116_24_017291.pdf</td><td>2024-10-29</td><td>---</td><td>---</td><td>297.63</td><td>68.45</td><td>366.08</td><td>Standardowa</td><td>Październik 2024</td></tr>
+<tr><td>FVO_116_24_013009.pdf</td><td>FVO_116_24_013009.pdf</td><td>2024-08-23</td><td>---</td><td>---</td><td>12.49</td><td>2.87</td><td>15.36</td><td>Standardowa</td><td>Sierpień 2024</td></tr>
+<tr><td>FVO_116_24_014982.pdf</td><td>FVO_116_24_014982.pdf</td><td>2024-09-24</td><td>---</td><td>---</td><td>36.96</td><td>8.50</td><td>45.46</td><td>Standardowa</td><td>Wrzesień 2024</td></tr>
+<tr><td>FVO_116_24_017086.pdf</td><td>FVO_116_24_017086.pdf</td><td>2024-10-25</td><td>---</td><td>---</td><td>116.13</td><td>26.71</td><td>142.84</td><td>Standardowa</td><td>Październik 2024</td></tr>
+<tr><td>FVO_116_24_011959.pdf</td><td>FVO_116_24_011959.pdf</td><td>2024-08-06</td><td>---</td><td>---</td><td>15.24</td><td>3.51</td><td>18.75</td><td>Standardowa</td><td>Sierpień 2024</td></tr>
+<tr><td>FVO_116_24_015524.pdf</td><td>FVO_116_24_015524.pdf</td><td>2024-10-02</td><td>---</td><td>---</td><td>55.89</td><td>12.86</td><td>68.75</td><td>Standardowa</td><td>Październik 2024</td></tr>
+<tr><td>FVO_116_24_015520.pdf</td><td>FVO_116_24_015520.pdf</td><td>2024-10-02</td><td>---</td><td>---</td><td>77.49</td><td>17.82</td><td>95.31</td><td>Standardowa</td><td>Październik 2024</td></tr>
+<tr><td>FVO_116_24_012105.pdf</td><td>FVO_116_24_012105.pdf</td><td>2024-08-08</td><td>---</td><td>---</td><td>1852.58</td><td>426.08</td><td>2278.66</td><td>Standardowa</td><td>Sierpień 2024</td></tr>
+<tr><td>FVO_116_24_015326.pdf</td><td>FVO_116_24_015326.pdf</td><td>2024-09-30</td><td>---</td><td>---</td><td>52.67</td><td>12.11</td><td>64.78</td><td>Standardowa</td><td>Wrzesień 2024</td></tr>
+<tr><td>FVO_116_24_017294.pdf</td><td>FVO_116_24_017294.pdf</td><td>2024-10-29</td><td>---</td><td>---</td><td>40.21</td><td>9.25</td><td>49.46</td><td>Standardowa</td><td>Październik 2024</td></tr>
+<tr><td>FVO_116_24_016438.pdf</td><td>FVO_116_24_016438.pdf</td><td>2024-10-16</td><td>---</td><td>---</td><td>32.51</td><td>7.48</td><td>39.99</td><td>Standardowa</td><td>Październik 2024</td></tr>
+<tr><td>FVO_116_24_012931.pdf</td><td>FVO_116_24_012931.pdf</td><td>2024-08-22</td><td>---</td><td>---</td><td>65.46</td><td>15.05</td><td>80.51</td><td>Standardowa</td><td>Sierpień 2024</td></tr>
+<tr><td>FVO_116_24_011960.pdf</td><td>FVO_116_24_011960.pdf</td><td>2024-08-06</td><td>---</td><td>---</td><td>18.02</td><td>4.14</td><td>22.16</td><td>Standardowa</td><td>Sierpień 2024</td></tr>
+<tr><td>FVO_116_24_012500.pdf</td><td>FVO_116_24_012500.pdf</td><td>2024-08-14</td><td>---</td><td>---</td><td>35.16</td><td>8.09</td><td>43.25</td><td>Standardowa</td><td>Sierpień 2024</td></tr>
+<tr><td>FVO_116_24_014603.pdf</td><td>FVO_116_24_014603.pdf</td><td>2024-09-18</td><td>---</td><td>---</td><td>108.88</td><td>25.05</td><td>133.93</td><td>Standardowa</td><td>Wrzesień 2024</td></tr>
+<tr><td>FVO_116_24_015245.pdf</td><td>FVO_116_24_015245.pdf</td><td>2024-09-27</td><td>---</td><td>---</td><td>347.65</td><td>79.96</td><td>427.61</td><td>Standardowa</td><td>Wrzesień 2024</td></tr>
+<tr><td>FVO_116_24_013350.pdf</td><td>FVO_116_24_013350.pdf</td><td>2024-08-29</td><td>---</td><td>---</td><td>60.36</td><td>13.88</td><td>74.24</td><td>Standardowa</td><td>Sierpień 2024</td></tr>
+<tr><td>FVO_116_24_014211.pdf</td><td>FVO_116_24_014211.pdf</td><td>2024-09-12</td><td>---</td><td>---</td><td>860.05</td><td>197.80</td><td>1057.85</td><td>Standardowa</td><td>Wrzesień 2024</td></tr>
+<tr><td>FVO_116_24_015669.pdf</td><td>FVO_116_24_015669.pdf</td><td>2024-10-04</td><td>---</td><td>---</td><td>1175.52</td><td>270.35</td><td>1445.87</td><td>Standardowa</td><td>Październik 2024</td></tr>
+<tr><td>FVO_116_24_015682.pdf</td><td>FVO_116_24_015682.pdf</td><td>2024-10-04</td><td>---</td><td>---</td><td>62.18</td><td>14.30</td><td>76.48</td><td>Standardowa</td><td>Październik 2024</td></tr>
+<tr><td>FVO_116_24_013973.pdf</td><td>FVO_116_24_013973.pdf</td><td>2024-09-09</td><td>---</td><td>---</td><td>395.18</td><td>90.89</td><td>486.07</td><td>Standardowa</td><td>Wrzesień 2024</td></tr>
+<tr><td>FVO_116_24_015456.pdf</td><td>FVO_116_24_015456.pdf</td><td>2024-10-01</td><td>---</td><td>---</td><td>511.31</td><td>117.60</td><td>628.91</td><td>Standardowa</td><td>Październik 2024</td></tr>
+<tr><td>FVO_116_24_014774.pdf</td><td>FVO_116_24_014774.pdf</td><td>2024-09-20</td><td>---</td><td>---</td><td>15.30</td><td>3.52</td><td>18.82</td><td>Standardowa</td><td>Wrzesień 2024</td></tr>
+<tr><td>FVO_116_24_016611.pdf</td><td>FVO_116_24_016611.pdf</td><td>2024-10-18</td><td>---</td><td>---</td><td>38.10</td><td>8.76</td><td>46.86</td><td>Standardowa</td><td>Październik 2024</td></tr>
+<tr><td>FVO_116_24_015132.pdf</td><td>FVO_116_24_015132.pdf</td><td>2024-09-26</td><td>---</td><td>---</td><td>7.28</td><td>1.67</td><td>8.95</td><td>Standardowa</td><td>Wrzesień 2024</td></tr>
+<tr><td>FVO_116_24_014238.pdf</td><td>FVO_116_24_014238.pdf</td><td>2024-09-12</td><td>---</td><td>---</td><td>45.96</td><td>10.57</td><td>56.53</td><td>Standardowa</td><td>Wrzesień 2024</td></tr>
+<tr><td>FVO_116_24_014576.pdf</td><td>FVO_116_24_014576.pdf</td><td>2024-09-18</td><td>---</td><td>---</td><td>884.56</td><td>203.44</td><td>1088.00</td><td>Standardowa</td><td>Wrzesień 2024</td></tr>
+<tr><td>FVO_116_24_016598.pdf</td><td>FVO_116_24_016598.pdf</td><td>2024-10-18</td><td>---</td><td>---</td><td>1258.37</td><td>289.42</td><td>1547.79</td><td>Standardowa</td><td>Październik 2024</td></tr>
+<tr><td>FVO_116_24_016229.pdf</td><td>FVO_116_24_016229.pdf</td><td>2024-10-14</td><td>---</td><td>---</td><td>612.06</td><td>140.77</td><td>752.83</td><td>Standardowa</td><td>Październik 2024</td></tr>
+<tr><td>FV116-K_24_006865.pdf</td><td>FV116-K_24_006865.pdf</td><td>2024-10-14</td><td>2024-09-26</td><td>FVO/116/24/015112</td><td>-158.8</td><td>-36.52</td><td>-195.32</td><td>Korekta</td><td>Wrzesień 2024</td></tr>
+<tr><td>FV116-K_24_006642.pdf</td><td>FV116-K_24_006642.pdf</td><td>2024-10-04</td><td>2024-10-01</td><td>FVO/116/24/015435</td><td>-19.88</td><td>-4.57</td><td>-24.45</td><td>Korekta</td><td>Październik 2024</td></tr>
+<tr><td>FV116-K_24_006508.pdf</td><td>FV116-K_24_006508.pdf</td><td>2024-09-30</td><td>2024-09-26</td><td>FVO/116/24/015128</td><td>-5.53</td><td>-1.27</td><td>-6.8</td><td>Korekta</td><td>Wrzesień 2024</td></tr>
+<tr><td>FV116-K_24_006252.pdf</td><td>FV116-K_24_006252.pdf</td><td>2024-09-19</td><td>2024-09-19</td><td>FVO/116/24/014680</td><td>-319.76</td><td>-73.54</td><td>-393.3</td><td>Korekta</td><td>Wrzesień 2024</td></tr>
+<tr><td>FV116-K_24_006643.pdf</td><td>FV116-K_24_006643.pdf</td><td>2024-10-04</td><td>2024-10-01</td><td>FVO/116/24/015456</td><td>-50.66</td><td>-11.65</td><td>-62.31</td><td>Korekta</td><td>Październik 2024</td></tr>
+<tr><td>FV116-K_24_007213.pdf</td><td>FV116-K_24_007213.pdf</td><td>2024-10-25</td><td>2024-10-22</td><td>FVO/116/24/016805</td><td>-57.47</td><td>-13.22</td><td>-70.69</td><td>Korekta</td><td>Październik 2024</td></tr>
+<tr><td>FV116-K_24_006494.pdf</td><td>FV116-K_24_006494.pdf</td><td>2024-09-28</td><td>2024-09-27</td><td>FVO/116/24/015221</td><td>-8.19</td><td>-1.88</td><td>-10.07</td><td>Korekta</td><td>Wrzesień 2024</td></tr>
+<tr><td>FV116-K_24_006085.pdf</td><td>FV116-K_24_006085.pdf</td><td>2024-09-16</td><td>2024-09-13</td><td>FVO/116/24/014292</td><td>-16.87</td><td>-3.88</td><td>-20.75</td><td>Korekta</td><td>Wrzesień 2024</td></tr>
+<tr><td>FV116-K_24_006122.pdf</td><td>FV116-K_24_006122.pdf</td><td>2024-09-17</td><td>2024-09-04</td><td>FVO/116/24/013679</td><td>-13.65</td><td>-3.14</td><td>-16.79</td><td>Korekta</td><td>Wrzesień 2024</td></tr>
+<tr><td>FV116-K_24_006081.pdf</td><td>FV116-K_24_006081.pdf</td><td>2024-09-16</td><td>2024-08-31</td><td>FVO/116/24/013478</td><td>-74.66</td><td>-17.16</td><td>-91.82</td><td>Korekta</td><td>Sierpień 2024</td></tr>
+<tr><td>FV116-K_24_006243.pdf</td><td>FV116-K_24_006243.pdf</td><td>2024-09-19</td><td>2024-09-17</td><td>FVO/116/24/014497</td><td>-227.58</td><td>-52.34</td><td>-279.92</td><td>Korekta</td><td>Wrzesień 2024</td></tr>
+<tr><td>FV116-K_24_006531.pdf</td><td>FV116-K_24_006531.pdf</td><td>2024-10-01</td><td>2024-09-30</td><td>FVO/116/24/015306</td><td>-48.79</td><td>-11.22</td><td>-60.01</td><td>Korekta</td><td>Wrzesień 2024</td></tr>
+<tr><td>FV116-K_24_006242.pdf</td><td>FV116-K_24_006242.pdf</td><td>2024-09-19</td><td>2024-09-12</td><td>FVO/116/24/014211</td><td>-41.62</td><td>-9.57</td><td>-51.19</td><td>Korekta</td><td>Wrzesień 2024</td></tr>
+<tr><td>FV116-K_24_005506.pdf</td><td>FV116-K_24_005506.pdf</td><td>2024-08-21</td><td>2024-08-16</td><td>FVO/116/24/012560</td><td>-338.31</td><td>-77.81</td><td>-416.12</td><td>Korekta</td><td>Sierpień 2024</td></tr>
+<tr><td>FV116-K_24_006218.pdf</td><td>FV116-K_24_006218.pdf</td><td>2024-09-18</td><td>2024-09-18</td><td>FVO/116/24/014590</td><td>-17.79</td><td>-4.09</td><td>-21.88</td><td>Korekta</td><td>Wrzesień 2024</td></tr>
+<tr><td>FV116-K_24_006768.pdf</td><td>FV116-K_24_006768.pdf</td><td>2024-10-09</td><td>2024-10-03</td><td>FVO/116/24/015586</td><td>-30.98</td><td>-7.13</td><td>-38.11</td><td>Korekta</td><td>Październik 2024</td></tr>
+<tr><td>FV116-K_24_005505.pdf</td><td>FV116-K_24_005505.pdf</td><td>2024-08-21</td><td>2024-08-16</td><td>FVO/116/24/012560</td><td>-297.99</td><td>-68.53</td><td>-366.52</td><td>Korekta</td><td>Sierpień 2024</td></tr>
+<tr><td>FV116-K_24_005699.pdf</td><td>FV116-K_24_005699.pdf</td><td>2024-08-29</td><td>2024-08-16</td><td>FVO/116/24/012560</td><td>-154.27</td><td>-35.48</td><td>-189.75</td><td>Korekta</td><td>Sierpień 2024</td></tr>
+<tr><td>FV116-K_24_006380.pdf</td><td>FV116-K_24_006380.pdf</td><td>2024-09-24</td><td>2024-09-18</td><td>FVO/116/24/014576</td><td>-318.49</td><td>-73.25</td><td>-391.74</td><td>Korekta</td><td>Wrzesień 2024</td></tr>
+<tr><td>FV116-K_24_006381.pdf</td><td>FV116-K_24_006381.pdf</td><td>2024-09-24</td><td>2024-09-20</td><td>FVO/116/24/014747</td><td>-211.32</td><td>-48.6</td><td>-259.92</td><td>Korekta</td><td>Wrzesień 2024</td></tr>
+<tr><td>FV116-K_24_006977.pdf</td><td>FV116-K_24_006977.pdf</td><td>2024-10-16</td><td>2024-10-10</td><td>FVO/116/24/016043</td><td>-60.66</td><td>-13.95</td><td>-74.61</td><td>Korekta</td><td>Październik 2024</td></tr>
+<tr><td>FV116-K_24_005271.pdf</td><td>FV116-K_24_005271.pdf</td><td>2024-08-12</td><td>2024-08-12</td><td>FVO/116/24/012294</td><td>-629.71</td><td>-144.83</td><td>-774.54</td><td>Korekta</td><td>Sierpień 2024</td></tr>
+<tr><td>FV116-K_24_005700.pdf</td><td>FV116-K_24_005700.pdf</td><td>2024-08-29</td><td>2024-08-28</td><td>FVO/116/24/013253</td><td>-15.28</td><td>-3.51</td><td>-18.79</td><td>Korekta</td><td>Sierpień 2024</td></tr>
+<tr><td>FV116-K_24_005270.pdf</td><td>FV116-K_24_005270.pdf</td><td>2024-08-12</td><td>2024-08-06</td><td>FVO/116/24/011938</td><td>-74.78</td><td>-17.2</td><td>-91.98</td><td>Korekta</td><td>Sierpień 2024</td></tr>
+<tr><td>FV116-K_24_005297.pdf</td><td>FV116-K_24_005297.pdf</td><td>2024-08-13</td><td>2024-08-07</td><td>FVO/116/24/012011</td><td>-33.56</td><td>-7.72</td><td>-41.28</td><td>Korekta</td><td>Sierpień 2024</td></tr>
+<tr><td>FV116-K_24_005491.pdf</td><td>FV116-K_24_005491.pdf</td><td>2024-08-21</td><td>2024-08-12</td><td>FVO/116/24/012320</td><td>-15.55</td><td>-3.58</td><td>-19.13</td><td>Korekta</td><td>Sierpień 2024</td></tr>
+<tr><td>FV116-K_24_005849.pdf</td><td>FV116-K_24_005849.pdf</td><td>2024-09-04</td><td>2024-09-03</td><td>FVO/116/24/013599</td><td>-3.73</td><td>-0.86</td><td>-4.59</td><td>Korekta</td><td>Wrzesień 2024</td></tr>
+<tr><td>FV116-K_24_007051.pdf</td><td>FV116-K_24_007051.pdf</td><td>2024-10-18</td><td>2024-10-16</td><td>FVO/116/24/016424</td><td>-28.12</td><td>-6.47</td><td>-34.59</td><td>Korekta</td><td>Październik 2024</td></tr>
+<tr><td>FV116-K_24_006574.pdf</td><td>FV116-K_24_006574.pdf</td><td>2024-10-02</td><td>2024-09-27</td><td>FVO/116/24/015199</td><td>-205.44</td><td>-47.25</td><td>-252.69</td><td>Korekta</td><td>Wrzesień 2024</td></tr>
+<tr><td>FV116-K_24_005492.pdf</td><td>FV116-K_24_005492.pdf</td><td>2024-08-21</td><td>2024-08-14</td><td>FVO/116/24/012468</td><td>-20.88</td><td>-4.8</td><td>-25.68</td><td>Korekta</td><td>Sierpień 2024</td></tr>
+<tr><td>FV116-K_24_006766.pdf</td><td>FV116-K_24_006766.pdf</td><td>2024-10-09</td><td>2024-09-12</td><td>FVO/116/24/014211</td><td>-29.89</td><td>-6.87</td><td>-36.76</td><td>Korekta</td><td>Wrzesień 2024</td></tr>
+<tr><td>FV116-K_24_007322.pdf</td><td>FV116-K_24_007322.pdf</td><td>2024-10-29</td><td>2024-10-28</td><td>FVO/116/24/017181</td><td>-84.16</td><td>-19.36</td><td>-103.52</td><td>Korekta</td><td>Październik 2024</td></tr>
+<tr><td>FV116-K_24_006217.pdf</td><td>FV116-K_24_006217.pdf</td><td>2024-09-18</td><td>2024-09-18</td><td>FVO/116/24/014576</td><td>-16.62</td><td>-3.82</td><td>-20.44</td><td>Korekta</td><td>Wrzesień 2024</td></tr>
+<tr><td>FV116-K_24_006767.pdf</td><td>FV116-K_24_006767.pdf</td><td>2024-10-09</td><td>2024-09-30</td><td>FVO/116/24/015306</td><td>-91.97</td><td>-21.15</td><td>-113.12</td><td>Korekta</td><td>Wrzesień 2024</td></tr>
+<tr><td>FV116-K_24_007043.pdf</td><td>FV116-K_24_007043.pdf</td><td>2024-10-18</td><td>2024-10-10</td><td>FVO/116/24/016043</td><td>-15.89</td><td>-3.65</td><td>-19.54</td><td>Korekta</td><td>Październik 2024</td></tr>
+<tr><td>FV116-K_24_005709.pdf</td><td>FV116-K_24_005709.pdf</td><td>2024-08-29</td><td>2024-08-29</td><td>FVO/116/24/013332</td><td>-69.47</td><td>-15.98</td><td>-85.45</td><td>Korekta</td><td>Sierpień 2024</td></tr>
+<tr><td>FV116-K_24_005590.pdf</td><td>FV116-K_24_005590.pdf</td><td>2024-08-26</td><td>2024-08-22</td><td>FVO/116/24/012931</td><td>-11.45</td><td>-2.63</td><td>-14.08</td><td>Korekta</td><td>Sierpień 2024</td></tr>
+<tr><td>FV116-K_24_005988.pdf</td><td>FV116-K_24_005988.pdf</td><td>2024-09-10</td><td>2024-09-10</td><td>FVO/116/24/014047</td><td>-8.4</td><td>-1.93</td><td>-10.33</td><td>Korekta</td><td>Wrzesień 2024</td></tr>
+<tr><td>FV116-K_24_005591.pdf</td><td>FV116-K_24_005591.pdf</td><td>2024-08-26</td><td>2024-08-07</td><td>FVO/116/24/012042</td><td>-14.67</td><td>-3.37</td><td>-18.04</td><td>Korekta</td><td>Sierpień 2024</td></tr>
+<tr><td>FV116-K_24_006274.pdf</td><td>FV116-K_24_006274.pdf</td><td>2024-09-20</td><td>2024-09-19</td><td>FVO/116/24/014662</td><td>-146.32</td><td>-33.65</td><td>-179.97</td><td>Korekta</td><td>Wrzesień 2024</td></tr>
+<tr><td>FV116-K_24_005958.pdf</td><td>FV116-K_24_005958.pdf</td><td>2024-09-09</td><td>2024-09-03</td><td>FVO/116/24/013599</td><td>-12.8</td><td>-2.94</td><td>-15.74</td><td>Korekta</td><td>Wrzesień 2024</td></tr>
+<tr><td>FV116-K_24_005959.pdf</td><td>FV116-K_24_005959.pdf</td><td>2024-09-09</td><td>2024-09-06</td><td>FVO/116/24/013871</td><td>-157.06</td><td>-36.12</td><td>-193.18</td><td>Korekta</td><td>Wrzesień 2024</td></tr>
+<tr><td>FV116-K_24_005795.pdf</td><td>FV116-K_24_005795.pdf</td><td>2024-09-02</td><td>2024-08-22</td><td>FVO/116/24/012914</td><td>-95.04</td><td>-21.86</td><td>-116.9</td><td>Korekta</td><td>Sierpień 2024</td></tr>
+<tr><td>FV116-K_24_005965.pdf</td><td>FV116-K_24_005965.pdf</td><td>2024-09-09</td><td>2024-09-03</td><td>FVO/116/24/013599</td><td>-154.28</td><td>-35.48</td><td>-189.76</td><td>Korekta</td><td>Wrzesień 2024</td></tr>
+
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th colspan="5" style="text-align:right">Suma:</th>
+                    <th id="netto-suma">0.00</th>
+                    <th id="podatek-suma">0.00</th>
+                    <th id="brutto-suma">0.00</th>
+                    <th colspan="2"></th>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.21/js/dataTables.bootstrap4.min.js"></script>
+    <script>
+        // Funkcja do formatowania liczb
+        function parseCurrency(value) {
+            return parseFloat(value.replace(/[^0-9.-]+/g, "")) || 0;
+        }
+
+        // Funkcja do aktualizacji sum dynamicznie
+        function updateSums() {
+            var nettoSuma = 0;
+            var podatekSuma = 0;
+            var bruttoSuma = 0;
+
+            $('#fileTable').DataTable().rows({ filter: 'applied' }).every(function() {
+                var data = this.data();
+                nettoSuma += parseCurrency(data[5]);  // Kwota netto
+                podatekSuma += parseCurrency(data[6]); // Podatek
+                bruttoSuma += parseCurrency(data[7]);  // Kwota brutto
+            });
+
+            // Aktualizuj wartości w stopce tabeli
+            $('#netto-suma').text(nettoSuma.toFixed(2));
+            $('#podatek-suma').text(podatekSuma.toFixed(2));
+            $('#brutto-suma').text(bruttoSuma.toFixed(2));
+        }
+
+        $(document).ready(function() {
+            var table = $('#fileTable').DataTable({
+                "order": [[2, "asc"]],
+                "language": {
+                    "url": "//cdn.datatables.net/plug-ins/1.10.21/i18n/Polish.json"
+                },
+                "footerCallback": function(row, data, start, end, display) {
+                    updateSums();  // Aktualizuj sumy za każdym razem, gdy tabela jest zmieniana
+                }
+            });
+
+            // Wywołaj funkcję aktualizującą sumy przy wyszukiwaniu i sortowaniu
+            table.on('draw', function() {
+                updateSums();
+            });
+
+            // Inicjalna aktualizacja sum po załadowaniu strony
+            updateSums();
+        });
+    </script>
+</body>
+</html>
